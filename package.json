@@ -1,39 +1,41 @@
 {
   "name": "chengkao",
   "version": "1.0.0",
-  "author": "耗子",
+  "private": true,
   "description": "",
+  "author": "耗子",
   "contributors": [
     "耗子"
   ],
   "main": "main.js",
-  "private": true,
   "scripts": {
-    "start": "npm run dev",
-    "dev": "sudo PORT=80 node .config/dev-server.js",
+    "backup": "git add . && git commit -a -m backup && git push",
     "build": "npm run clean && npm run lint && node .config/build.js",
-    "unit": "karma start test/unit/karma.conf.js --single-run",
+    "clean": "rm -rf dist .nyc_output coverage; mkdir dist",
+    "deploy": "node .config/deploy.js",
+    "dev": "sudo PORT=80 node .config/dev-server.js",
     "e2e": "node test/e2e/runner.js",
     "lint": "eslint --ext .js,.vue src .config .script test/*_spec.js",
-    "clean": "rm -rf dist .nyc_output coverage; mkdir dist",
     "prepublish": "npm run build",
-    "scp": "sh .script/publish.sh",
-    "backup": "git add . && git commit -a -m backup && git push",
     "publish": "npm run scp && npm run backup &",
-    "test": "npm run unit && npm run e2e"
-  },
-  "dependencies": {
-    "vue": "^2.0.8",
-    "vue-lazyload": "^0.8.3",
-    "vue-router": "^2.0.1",
-    "vuex": "^2.0.0",
-    "vuex-router-sync": "^2.1.1"
+    "scp": "sh .script/publish.sh",
+    "start": "npm run dev",
+    "test": "npm run unit && npm run e2e",
+    "unit": "karma start test/unit/karma.conf.js --single-run"
   },
   "config": {
     "ghooks": {
       "pre-commit": "NODE_ENV=production node .script/checkVersion.js && npm run lint",
       "pre-push": "git status"
     }
+  },
+  "dependencies": {
+    "gh-pages": "^2.0.1",
+    "vue": "^2.0.8",
+    "vue-lazyload": "^0.8.3",
+    "vue-router": "^2.0.1",
+    "vuex": "^2.0.0",
+    "vuex-router-sync": "^2.1.1"
   },
   "devDependencies": {
     "autoprefixer": "^6.5.3",

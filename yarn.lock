@@ -304,6 +304,13 @@ async@^0.9.0, async@~0.9.0:
   resolved "https://registry.npm.alibaba-inc.com/async/download/async-0.9.2.tgz#aea74d5e61c1f899613bf64bda66d4c78f2fd17d"
   integrity sha1-rqdNXmHB+JlhO/ZL2mbUx48v0X0=
 
+async@^2.6.1:
+  version "2.6.2"
+  resolved "https://registry.npm.alibaba-inc.com/async/download/async-2.6.2.tgz#18330ea7e6e313887f5d2f2a904bac6fe4dd5381"
+  integrity sha1-GDMOp+bjE4h/XS8qkEusb+TdU4E=
+  dependencies:
+    lodash "^4.17.11"
+
 asynckit@^0.4.0:
   version "0.4.0"
   resolved "https://registry.npm.alibaba-inc.com/asynckit/download/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
@@ -1553,7 +1560,7 @@ commander@2.9.0:
   dependencies:
     graceful-readlink ">= 1.0.0"
 
-commander@^2.19.0, commander@^2.20.0, commander@~2.20.0:
+commander@^2.18.0, commander@^2.19.0, commander@^2.20.0, commander@~2.20.0:
   version "2.20.0"
   resolved "https://registry.npm.alibaba-inc.com/commander/download/commander-2.20.0.tgz#d58bb2b5c1ee8f87b0d340027e9e94e222c5a422"
   integrity sha1-1YuytcHuj4ew00ACfp6U4iLFpCI=
@@ -2178,6 +2185,11 @@ electron-to-chromium@^1.2.7:
   resolved "https://registry.npm.alibaba-inc.com/electron-to-chromium/download/electron-to-chromium-1.3.133.tgz#c47639c19b91feee3e22fad69f5556142007008c"
   integrity sha1-xHY5wZuR/u4+IvrWn1VWFCAHAIw=
 
+email-addresses@^3.0.1:
+  version "3.0.3"
+  resolved "https://registry.npm.alibaba-inc.com/email-addresses/download/email-addresses-3.0.3.tgz#fc3c6952f68da24239914e982c8a7783bc2ed96d"
+  integrity sha1-/DxpUvaNokI5kU6YLIp3g7wu2W0=
+
 emojis-list@^2.0.0:
   version "2.1.0"
   resolved "https://registry.npm.alibaba-inc.com/emojis-list/download/emojis-list-2.1.0.tgz#4daa4d9db00f9819880c79fa457ae5b09a1fd389"
@@ -2793,6 +2805,28 @@ filename-regex@^2.0.0:
   resolved "https://registry.npm.alibaba-inc.com/filename-regex/download/filename-regex-2.0.1.tgz#c1c4b9bee3e09725ddb106b75c1e301fe2f18b26"
   integrity sha1-wcS5vuPglyXdsQa3XB4wH+LxiyY=
 
+filename-reserved-regex@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npm.alibaba-inc.com/filename-reserved-regex/download/filename-reserved-regex-1.0.0.tgz#e61cf805f0de1c984567d0386dc5df50ee5af7e4"
+  integrity sha1-5hz4BfDeHJhFZ9A4bcXfUO5a9+Q=
+
+filenamify-url@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npm.alibaba-inc.com/filenamify-url/download/filenamify-url-1.0.0.tgz#b32bd81319ef5863b73078bed50f46a4f7975f50"
+  integrity sha1-syvYExnvWGO3MHi+1Q9GpPeXX1A=
+  dependencies:
+    filenamify "^1.0.0"
+    humanize-url "^1.0.0"
+
+filenamify@^1.0.0:
+  version "1.2.1"
+  resolved "https://registry.npm.alibaba-inc.com/filenamify/download/filenamify-1.2.1.tgz#a9f2ffd11c503bed300015029272378f1f1365a5"
+  integrity sha1-qfL/0RxQO+0wABUCknI3jx8TZaU=
+  dependencies:
+    filename-reserved-regex "^1.0.0"
+    strip-outer "^1.0.0"
+    trim-repeated "^1.0.0"
+
 fill-range@^2.1.0:
   version "2.2.4"
   resolved "https://registry.npm.alibaba-inc.com/fill-range/download/fill-range-2.2.4.tgz#eb1e773abb056dcd8df2bfdf6af59b8b3a936565"
@@ -2955,6 +2989,15 @@ fs-extra@^1.0.0:
     jsonfile "^2.1.0"
     klaw "^1.0.0"
 
+fs-extra@^7.0.0:
+  version "7.0.1"
+  resolved "https://registry.npm.alibaba-inc.com/fs-extra/download/fs-extra-7.0.1.tgz#4f189c44aa123b895f722804f55ea23eadc348e9"
+  integrity sha1-TxicRKoSO4lfcigE9V6iPq3DSOk=
+  dependencies:
+    graceful-fs "^4.1.2"
+    jsonfile "^4.0.0"
+    universalify "^0.1.0"
+
 fs-minipass@^1.2.5:
   version "1.2.5"
   resolved "https://registry.npm.alibaba-inc.com/fs-minipass/download/fs-minipass-1.2.5.tgz#06c277218454ec288df77ada54a03b8702aacb9d"
@@ -3044,6 +3087,20 @@ getpass@^0.1.1:
   integrity sha1-Xv+OPmhNVprkyysSgmBOi6YhSfo=
   dependencies:
     assert-plus "^1.0.0"
+
+gh-pages@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.npm.alibaba-inc.com/gh-pages/download/gh-pages-2.0.1.tgz#aefe47a43b8d9d2aa3130576b33fe95641e29a2f"
+  integrity sha1-rv5HpDuNnSqjEwV2sz/pVkHimi8=
+  dependencies:
+    async "^2.6.1"
+    commander "^2.18.0"
+    email-addresses "^3.0.1"
+    filenamify-url "^1.0.0"
+    fs-extra "^7.0.0"
+    globby "^6.1.0"
+    graceful-fs "^4.1.11"
+    rimraf "^2.6.2"
 
 ghooks@^1.3.2:
   version "1.3.2"
@@ -3453,6 +3510,14 @@ https-proxy-agent@1:
     agent-base "2"
     debug "2"
     extend "3"
+
+humanize-url@^1.0.0:
+  version "1.0.1"
+  resolved "https://registry.npm.alibaba-inc.com/humanize-url/download/humanize-url-1.0.1.tgz#f4ab99e0d288174ca4e1e50407c55fbae464efff"
+  integrity sha1-9KuZ4NKIF0yk4eUEB8VfuuRk7/8=
+  dependencies:
+    normalize-url "^1.0.0"
+    strip-url-auth "^1.0.0"
 
 iconv-lite@0.4.23:
   version "0.4.23"
@@ -4098,6 +4163,13 @@ jsonfile@^2.1.0:
   optionalDependencies:
     graceful-fs "^4.1.6"
 
+jsonfile@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.npm.alibaba-inc.com/jsonfile/download/jsonfile-4.0.0.tgz#8771aae0799b64076b76640fca058f9c10e33ecb"
+  integrity sha1-h3Gq4HmbZAdrdmQPygWPnBDjPss=
+  optionalDependencies:
+    graceful-fs "^4.1.6"
+
 jsonify@~0.0.0:
   version "0.0.0"
   resolved "https://registry.npm.alibaba-inc.com/jsonify/download/jsonify-0.0.0.tgz#2c74b6ee41d93ca51b7b5aaee8f503631d252a73"
@@ -4508,7 +4580,7 @@ lodash@^3.8.0:
   resolved "https://registry.npm.alibaba-inc.com/lodash/download/lodash-3.10.1.tgz#5bf45e8e49ba4189e17d482789dfd15bd140b7b6"
   integrity sha1-W/Rejkm6QYnhfUgnid/RW9FAt7Y=
 
-lodash@^4, lodash@^4.0.0, lodash@^4.0.1, lodash@^4.17.0, lodash@^4.17.2, lodash@^4.17.3, lodash@^4.17.4, lodash@^4.3.0, lodash@^4.5.0:
+lodash@^4, lodash@^4.0.0, lodash@^4.0.1, lodash@^4.17.0, lodash@^4.17.11, lodash@^4.17.2, lodash@^4.17.3, lodash@^4.17.4, lodash@^4.3.0, lodash@^4.5.0:
   version "4.17.11"
   resolved "https://registry.npm.alibaba-inc.com/lodash/download/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
   integrity sha1-s56mIp72B+zYniyN8SU2iRysm40=
@@ -5065,7 +5137,7 @@ normalize-range@^0.1.2:
   resolved "https://registry.npm.alibaba-inc.com/normalize-range/download/normalize-range-0.1.2.tgz#2d10c06bdfd312ea9777695a4d28439456b75942"
   integrity sha1-LRDAa9/TEuqXd2laTShDlFa3WUI=
 
-normalize-url@^1.4.0:
+normalize-url@^1.0.0, normalize-url@^1.4.0:
   version "1.9.1"
   resolved "https://registry.npm.alibaba-inc.com/normalize-url/download/normalize-url-1.9.1.tgz#2cc0d66b31ea23036458436e3620d85954c66c3c"
   integrity sha1-LMDWazHqIwNkWENuNiDYWVTGbDw=
@@ -6313,7 +6385,7 @@ right-align@^0.1.1:
   dependencies:
     align-text "^0.1.1"
 
-rimraf@^2.2.8, rimraf@^2.6.0, rimraf@^2.6.1, rimraf@~2.6.2:
+rimraf@^2.2.8, rimraf@^2.6.0, rimraf@^2.6.1, rimraf@^2.6.2, rimraf@~2.6.2:
   version "2.6.3"
   resolved "https://registry.npm.alibaba-inc.com/rimraf/download/rimraf-2.6.3.tgz#b2d104fe0d8fb27cf9e0a1cda8262dd3833c6cab"
   integrity sha1-stEE/g2Psnz54KHNqCYt04M8bKs=
@@ -6904,6 +6976,18 @@ strip-json-comments@~2.0.1:
   resolved "https://registry.npm.alibaba-inc.com/strip-json-comments/download/strip-json-comments-2.0.1.tgz#3c531942e908c2697c0ec344858c286c7ca0a60a"
   integrity sha1-PFMZQukIwml8DsNEhYwobHygpgo=
 
+strip-outer@^1.0.0:
+  version "1.0.1"
+  resolved "https://registry.npm.alibaba-inc.com/strip-outer/download/strip-outer-1.0.1.tgz#b2fd2abf6604b9d1e6013057195df836b8a9d631"
+  integrity sha1-sv0qv2YEudHmATBXGV34Nrip1jE=
+  dependencies:
+    escape-string-regexp "^1.0.2"
+
+strip-url-auth@^1.0.0:
+  version "1.0.1"
+  resolved "https://registry.npm.alibaba-inc.com/strip-url-auth/download/strip-url-auth-1.0.1.tgz#22b0fa3a41385b33be3f331551bbb837fa0cd7ae"
+  integrity sha1-IrD6OkE4WzO+PzMVUbu4N/oM164=
+
 supports-color@3.1.2:
   version "3.1.2"
   resolved "https://registry.npm.alibaba-inc.com/supports-color/download/supports-color-3.1.2.tgz#72a262894d9d408b956ca05ff37b2ed8a6e2a2d5"
@@ -7097,6 +7181,13 @@ trim-newlines@^1.0.0:
   resolved "https://registry.npm.alibaba-inc.com/trim-newlines/download/trim-newlines-1.0.0.tgz#5887966bb582a4503a41eb524f7d35011815a613"
   integrity sha1-WIeWa7WCpFA6QetST301ARgVphM=
 
+trim-repeated@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npm.alibaba-inc.com/trim-repeated/download/trim-repeated-1.0.0.tgz#e3646a2ea4e891312bf7eace6cfb05380bc01c21"
+  integrity sha1-42RqLqTokTEr9+rObPsFOAvAHCE=
+  dependencies:
+    escape-string-regexp "^1.0.2"
+
 trim-right@^1.0.1:
   version "1.0.1"
   resolved "https://registry.npm.alibaba-inc.com/trim-right/download/trim-right-1.0.1.tgz#cb2e1203067e0c8de1f614094b9fe45704ea6003"
@@ -7209,6 +7300,11 @@ uniqs@^2.0.0:
   version "2.0.0"
   resolved "https://registry.npm.alibaba-inc.com/uniqs/download/uniqs-2.0.0.tgz#ffede4b36b25290696e6e165d4a59edb998e6b02"
   integrity sha1-/+3ks2slKQaW5uFl1KWe25mOawI=
+
+universalify@^0.1.0:
+  version "0.1.2"
+  resolved "https://registry.npm.alibaba-inc.com/universalify/download/universalify-0.1.2.tgz#b646f69be3942dabcecc9d6639c80dc105efaa66"
+  integrity sha1-tkb2m+OULavOzJ1mOcgNwQXvqmY=
 
 unpipe@1.0.0, unpipe@~1.0.0:
   version "1.0.0"

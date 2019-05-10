@@ -5,6 +5,7 @@ require('shelljs/global')
 env.NODE_ENV = 'production'
 
 const path = require('path')
+const fs = require('fs')
 const config = require('./config')
 const ora = require('ora')
 const webpack = require('webpack')
@@ -21,6 +22,7 @@ cp('-R', 'static/*', assetsPath)
 webpack(webpackConfig, function (err, stats) {
   spinner.stop()
   if (err) throw err
+  fs.writeFileSync(`${__dirname}/../build/CNAME`, 'ck.haozi.me', 'utf8')
   process.stdout.write(stats.toString({
     colors: true,
     modules: false,
